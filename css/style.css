@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Sedgwick+Ave+Display&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../imagens/faisca.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-family: 'Young Serif', serif;    
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+.button {
+    background-color: rgb(236, 55, 10); /* Cor do botão */
+    color: white;
+    font-family: 'Young Serif', serif;    
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px; /* Torna o botão arredondado */
+}
+
+
+/* Estilo base para o título h1 */
+h1 {
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 100px;
+    text-align: center;
+    color: rgb(236, 55, 10);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Efeito de sombra que lembra chamas */
+h1::before {
+    content: 'C H U R R A S C Ô M E T R O'; /* Seu texto aqui */
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ff8400; /* Cor das chamas */
+    text-shadow:
+        1px 1px 0 #ff8400,
+        -1px -1px 0 #ff8400,
+        1px -1px 0 #ff8400,
+        -1px 1px 0 #ff8400,
+        0 0 10px rgba(255, 132, 0, 0.5); /* Sombra das chamas com desfoque */
+    animation: flicker 2s infinite; /* Animação de cintilação */
+}
+/* Animação de cintilação das chamas */
+@keyframes flicker {
+    0% {
+        opacity: 0.5;
+        transform: translateY(-5px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0.5;
+        transform: translateY(-5px);
+    }
+}
+
+

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+html{height:100dvh;}
+
+body, 
+#container,main
+{height:100%;}
+
+:root{
+    --gray-bg: #3b3b3b;
+}
+
+body {
+    background-image: url("../imagens/vegano.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+/* Estilo para quando o body possui a classe "escuro" */
+body.escuro {
+    backdrop-filter: brightness(0.5);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voltar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    max-width: 300px;
+    font-size: 1.3rem;
+    border-radius: 99px;
+    font-weight: bold;
+    background-color: #921616;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    transition: 150ms ease;
+    margin-bottom: 30px;
+    text-decoration: none;
+  }
+    /* Adicione estilos CSS para o posicionamento desejado */
+ 
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.textDiv2{
+    height: 100%;
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    gap: 12px;
+
+    & h2 {
+        font-size: 2.5em; 
+        margin-bottom: 1rem;
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+}
+.textDiv{
+    height: 100%;
+    padding: 0 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    gap: 12px;
+
+    & h2 {
+        font-size: 2.5em; 
+        margin-bottom: 1rem;
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+}
+
+  
+  /* Removendo a formatação padrão dos campos de entrada */
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    border: none; /* Remove a borda */
+    border-bottom: 2px solid #333; /* Adiciona uma linha inferior personalizada */
+    padding: 8px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    background-color: transparent; /* Fundo transparente */
+    outline: none; /* Remove o destaque de foco */
+    transition: border-color 0.3s ease; /* Transição suave para a cor da borda */
+  }
+  
+  /* Estilo quando o campo está em foco */
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus {
+    border-color: #ff0022; /* Cor da borda em foco */
+  }
+  
+  /* Estilo para o botão de envio */
+  .button2 {
+    background-color: #ff4800; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda */
+    padding: 12px 24px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer; /* Altera o cursor para apontador ao passar o mouse */
+  }
+  
+  /* Estilo para o botão de envio quando hover (passar o mouse) */
+  .button2:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+  }
+  
+.inputCont{
+    border-radius: 99px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    padding: 8px 16px;
+    width: 70%;
+    
+    gap: 8px;
+
+    z-index: 1;
+
+    & label{
+      color: white;
+      font-size: 1.9rem;
+      font-weight: 500;
+      max-width: 110px;
+    }
+
+    & input{
+        width: 5ch;
+        border-radius: 990px;
+        border: none;
+        font-size: 1.8rem;
+        font-weight: 500;
+        color: #000000;
+        outline: none;
+        text-align: center;
+    }
+}
+
+
+
+#btnAlterar {
+    position: absolute;
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    border: none;
+    background-color: #ff0022; /*  para o tema claro */
+    font-size: 19px;
+    aspect-ratio: 4/1;
+    color: #FFF; /* Cor de texto */
+    border-radius: 20px; /* Borda arredondada */
+    padding: 10px 50px; /* Espaçamento interno */
+    cursor: pointer;
+    z-index: 1; /* Certifica-se de que o botão está acima dos outros elementos */
+    transition: 150ms ease;
+
+    &:hover {
+        background-color: #a12e0b;
+        transform: translateY(-2px);
+        
+    }
+  }
+
+
+::placeholder {
+    color: #1d130b;
+}
+
+.button {
+    cursor: pointer;
+    max-width: 150px;
+    font-size: 1.3rem;
+    border-radius: 99px;
+    font-weight: bold;
+    background-color: #921616;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    transition: 150ms ease;
+
+    &:hover {
+        background-color: #a12e0b;
+        transform: translateY(-4px);
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }	
+}
+
+
+
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+#resultado {
+    display: none;
+
+    background-color: rgba(255, 255, 255, 0.178);
+    border: 1px solid rgba(255, 255, 255, 0.478);
+    backdrop-filter: blur(30px);
+
+    color: white;
+    padding: 20px 25px ;
+    border-radius: 30px;
+    text-align: center;
+    height: fit-content;
+
+    & h3{
+        font-size: 2.2rem;
+    }
+
+    & p{
+        font-size: 1.8rem;
+        margin: 15px;
+    }
+}
+
+
+.tofu::before {
+    content: '';
+    display: inline-block;
+    width: 54px;
+    height: 52px;
+    background-image: url(../imagens/tofu.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 15px;
+}
+
+.seitan-tempeh::before {
+    content: '';
+    display: inline-block;
+    width: 54px;
+    height: 55px;
+    background-image: url(../imagens/seitan.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 15px;
+}
+
+.salsichas-veganas::before {
+    content: '';
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-image: url(../imagens/salsicha.png); 
+    background-size: cover;
+    margin-right: 15px;
+}
+
+.pao-vegano::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 52px;
+    background-image: url(../imagens/pao-de-alho.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 15px;
+}
+
+.carvao::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 52px;
+    background-image: url(../imagens/carvao.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 15px;
+}
+.agua::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 52px;
+    background-image: url(../imagens/garrafa-de-agua.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 15px;  
+}
+
+::selection {
+    background-color: #742237;
+    color: #FFF2E2;
+}
+

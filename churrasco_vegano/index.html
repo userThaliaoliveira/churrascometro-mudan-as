@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagens/icone.png">
+    <link rel="stylesheet" href="../css/style_vegano.css">
+
+    <title>Churrasco comum</title>
+</head>
+<body>
+    <main>
+      <button id="btnAlterar">💡</button>
+    
+    <section id="container">
+      <form class="textDiv">
+        <h2>FAÇA O CÁLCULO<br />DO SEU CHURRASCÃO</h2>
+        
+        <div class="inputCont">
+          <input id="homens" type="number" min="0" placeholder="0" required/>
+          <label for="homens">Homens:</label>
+        </div>
+        <div class="inputCont">
+          <input id="mulheres" type="number" min="0" placeholder="0" required/>
+          <label for="mulheres">Mulheres:</label>
+        </div>
+        <div class="inputCont">
+          <input id="criancas" type="number" min="0" placeholder="0" required/>
+          <label for="criancas">Crianças:</label>
+        </div>
+        <div class="inputCont">
+          <input id="duracao" type="number" min="0" placeholder="0" required/>
+          <label for="duracao">Duração:</label>
+        </div>
+        <input onclick="calc()" type="button" class="button" value="CALCULAR" />
+      </form>
+      <div id="resultado" class="textDiv">
+        <!-- Resultados serão exibidos aqui -->
+    </div>
+    </section>
+    </main>
+    <div >
+      <a class="voltar" href="../index.html">Voltar a página</a>
+    </div>
+    <script src="../js/tema_escuro.js"></script>
+    <script src="../js/script_vegano.js"></script>
+  </body>
+  
+</html>

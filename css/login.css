@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body, #container, main {
+    height: 100%;
+}
+
+:root {
+    --gray-bg: #3b3b3b;
+}
+
+body {
+    background-image: url("../imagens/file-de-carne-e-salame-na-placa-de-madeira-com-copia-espaco.jpg");
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Centralize horizontalmente */
+    align-items: center;
+}
+/* Estilo para quando o body possui a classe "escuro" */
+body.escuro {
+    backdrop-filter: brightness(0.5);
+}
+#btnAlterar {
+    position: absolute;
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    border: none;
+    background-color: #ff0022; /*  para o tema claro */
+    font-size: 19px;
+    aspect-ratio: 4/1;
+    color: #FFF; /* Cor de texto */
+    border-radius: 20px; /* Borda arredondada */
+    padding: 10px 50px; /* Espaçamento interno */
+    cursor: pointer;
+    z-index: 1; /* Certifica-se de que o botão está acima dos outros elementos */
+    transition: 150ms ease;
+
+    &:hover {
+        background-color: #a12e0b;
+        transform: translateY(-2px);
+        
+    }
+  }
+
+
+#step1Form {
+    padding: 20px; /* Reduz o padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+#step1Form h2 {
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px; /* Reduz o padding */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Use a largura máxima */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#cep{
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.form-check-input {
+    margin-right: 5px;
+}
+
+.error {
+    border: 2px solid #ff5757;
+}
+
+.btn {
+    background-color: #b41010;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #ff5757;
+}
