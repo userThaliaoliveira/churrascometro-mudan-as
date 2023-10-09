@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
             localStorage.setItem("email", emailInput.value);
             localStorage.setItem("cep", cepInput.value);
             localStorage.setItem("consentimento", consentimentoInput.checked);
-            window.location.href = "index.html";
+            window.location.href = "calculadora.html";
         }
     });
 

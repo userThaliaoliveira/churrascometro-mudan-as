@@ -13,7 +13,7 @@ function rec(resultado) {
 // Adicione um evento de clique ao botão "Sim"
 document.getElementById("simButton").addEventListener("click", function() {
   // Realize a chamada à API quando o botão "Sim" for clicado
-  fetch("http://localhost:5501/pergunta")
+  fetch("http://localhost:5500/pergunta")
     .then(resp => resp.json())
     .then(resp => rec(resp));
 });

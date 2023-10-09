@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 5501;
+const port = 5500;
 var cors = require('cors')
 // Lista de receitas
 const receitas = [
